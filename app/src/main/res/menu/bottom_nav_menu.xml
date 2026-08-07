@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/nav_progressi"
+        android:title="Progressi"
+        android:icon="@drawable/ic_progress"/>
+
+    <item
+        android:id="@+id/nav_timer"
+        android:title="Timer"
+        android:icon="@drawable/ic_timer"/>
+
+    <item
+        android:id="@+id/nav_calendario"
+        android:title="Calendario"
+        android:icon="@drawable/ic_calendar"/>
+
+</menu>

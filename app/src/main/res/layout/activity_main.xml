@@ -1,25 +1,118 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:fillViewport="true"
+    android:background="#F5F5F5">
 
-    <TextView
-        android:id="@+id/txtWelcome"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Benvenuto in Palestra"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:padding="16dp"/>
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <Button
-        android:id="@+id/btnEnter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Entra in palestra"
-        android:padding="12dp"
-        android:textSize="18sp"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/titleHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scegli il tuo allenamento"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:paddingBottom="32dp"/>
+
+        <LinearLayout
+            android:id="@+id/cardA"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_workout"
+                android:tint="#6A1B9A"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allenamento A"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#6A1B9A"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardB"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_workout"
+                android:tint="#283593"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allenamento B"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#283593"
+                android:layout_marginLeft="20dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cardC"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            android:background="@drawable/card_bg"
+            android:padding="20dp"
+            android:elevation="8dp"
+            android:translationZ="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_workout"
+                android:tint="#00897B"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Allenamento C"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#00897B"
+                android:layout_marginLeft="20dp"/>
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNav"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="#FFFFFF"
+                app:itemIconTint="@color/black"
+                app:itemTextColor="@color/black"
+                app:menu="@menu/bottom_nav_menu"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
